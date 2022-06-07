@@ -28,8 +28,12 @@ const soldier = {
       }
     },
     
-    wound: function () {}, // ранить
+    wound: function () {
+        if(this.health === 0){
+          console.log('you loses')
+        } else {
+         this.health--
+        }
   };
   soldier.reloading()
   console.log(soldier)
-  
